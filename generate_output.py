@@ -11,10 +11,11 @@ def generate(data: dict):
         is_day = "Ночь"
     print(
     f"Город: {data['country']}\n"
-    f"Температура: {data['current']['temperature_2m']}{data['current_units']['temperature_2m']}\n"
-    f"Ощущается как: {data['current']['apparent_temperature']}{data['current_units']['apparent_temperature']}\n"
-    f"Скорость ветра: {data['current']['wind_speed_10m']}{data['current_units']['wind_speed_10m']}\n"
-    f"{is_day}"
+    f"|\tТемпература: {data['current']['temperature_2m']}{data['current_units']['temperature_2m']}\n"
+    f"|\tОщущается как: {data['current']['apparent_temperature']}{data['current_units']['apparent_temperature']}\n"
+    f"|\tСкорость ветра: {data['current']['wind_speed_10m']}{data['current_units']['wind_speed_10m']}\n"
+    f"|\t{is_day}\n"
+    f"----------------------------------"
 )
 
 
