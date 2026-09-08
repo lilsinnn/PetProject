@@ -10,4 +10,10 @@ def main():
     input()
 
 while True:
-    main()
+    try:
+        main()
+    except KeyError:
+        print("\nError")
+    except KeyboardInterrupt:
+        print("\nBye")
+        break
