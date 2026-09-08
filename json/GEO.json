@@ -1,0 +1,213 @@
+{
+    "results": [
+        {
+            "id": 524901,
+            "name": "Moscow",
+            "latitude": 55.75204,
+            "longitude": 37.61781,
+            "elevation": 155.0,
+            "feature_code": "PPLC",
+            "country_code": "RU",
+            "admin1_id": 524894,
+            "timezone": "Europe/Moscow",
+            "population": 10381222,
+            "country_id": 2017370,
+            "country": "Russia",
+            "admin1": "Moscow"
+        },
+        {
+            "id": 5601538,
+            "name": "Moscow",
+            "latitude": 46.73239,
+            "longitude": -117.00017,
+            "elevation": 786.0,
+            "feature_code": "PPLA2",
+            "country_code": "US",
+            "admin1_id": 5596512,
+            "admin2_id": 5598264,
+            "timezone": "America/Los_Angeles",
+            "population": 25060,
+            "postcodes": [
+                "83843",
+                "83844"
+            ],
+            "country_id": 6252001,
+            "country": "United States",
+            "admin1": "Idaho",
+            "admin2": "Latah"
+        },
+        {
+            "id": 4399153,
+            "name": "Moscow Mills",
+            "latitude": 38.94783,
+            "longitude": -90.91819,
+            "elevation": 164.0,
+            "feature_code": "PPL",
+            "country_code": "US",
+            "admin1_id": 4398678,
+            "admin2_id": 4395330,
+            "admin3_id": 4381403,
+            "timezone": "America/Chicago",
+            "population": 2567,
+            "postcodes": [
+                "63362"
+            ],
+            "country_id": 6252001,
+            "country": "United States",
+            "admin1": "Missouri",
+            "admin2": "Lincoln",
+            "admin3": "Clark Township"
+        },
+        {
+            "id": 5202009,
+            "name": "Moscow",
+            "latitude": 41.33675,
+            "longitude": -75.51852,
+            "elevation": 476.0,
+            "feature_code": "PPL",
+            "country_code": "US",
+            "admin1_id": 6254927,
+            "admin2_id": 5196674,
+            "admin3_id": 5202011,
+            "timezone": "America/New_York",
+            "population": 1960,
+            "postcodes": [
+                "18444"
+            ],
+            "country_id": 6252001,
+            "country": "United States",
+            "admin1": "Pennsylvania",
+            "admin2": "Lackawanna County",
+            "admin3": "Borough of Moscow"
+        },
+        {
+            "id": 4092267,
+            "name": "Sulligent",
+            "latitude": 33.90177,
+            "longitude": -88.13448,
+            "elevation": 99.0,
+            "feature_code": "PPL",
+            "country_code": "US",
+            "admin1_id": 4829764,
+            "admin2_id": 4071676,
+            "timezone": "America/Chicago",
+            "population": 1844,
+            "postcodes": [
+                "35586"
+            ],
+            "country_id": 6252001,
+            "country": "United States",
+            "admin1": "Alabama",
+            "admin2": "Lamar County"
+        },
+        {
+            "id": 4642988,
+            "name": "Moscow",
+            "latitude": 35.06203,
+            "longitude": -89.40396,
+            "elevation": 108.0,
+            "feature_code": "PPL",
+            "country_code": "US",
+            "admin1_id": 4662168,
+            "admin2_id": 4621908,
+            "timezone": "America/Chicago",
+            "population": 532,
+            "postcodes": [
+                "38057"
+            ],
+            "country_id": 6252001,
+            "country": "United States",
+            "admin1": "Tennessee",
+            "admin2": "Fayette"
+        },
+        {
+            "id": 5124210,
+            "name": "Leicester",
+            "latitude": 42.77201,
+            "longitude": -77.89667,
+            "elevation": 198.0,
+            "feature_code": "PPL",
+            "country_code": "US",
+            "admin1_id": 5128638,
+            "admin2_id": 5124928,
+            "admin3_id": 5124211,
+            "timezone": "America/New_York",
+            "population": 455,
+            "postcodes": [
+                "14481"
+            ],
+            "country_id": 6252001,
+            "country": "United States",
+            "admin1": "New York",
+            "admin2": "Livingston",
+            "admin3": "Town of Leicester"
+        },
+        {
+            "id": 5446028,
+            "name": "Moscow",
+            "latitude": 37.32363,
+            "longitude": -101.20572,
+            "elevation": 930.0,
+            "feature_code": "PPL",
+            "country_code": "US",
+            "admin1_id": 4273857,
+            "admin2_id": 5446576,
+            "admin3_id": 5446032,
+            "timezone": "America/Chicago",
+            "population": 319,
+            "postcodes": [
+                "67952"
+            ],
+            "country_id": 6252001,
+            "country": "United States",
+            "admin1": "Kansas",
+            "admin2": "Stevens",
+            "admin3": "Moscow Township"
+        },
+        {
+            "id": 4868038,
+            "name": "Moscow",
+            "latitude": 41.57581,
+            "longitude": -91.08348,
+            "elevation": 199.0,
+            "feature_code": "PPL",
+            "country_code": "US",
+            "admin1_id": 4862182,
+            "admin2_id": 4868410,
+            "admin3_id": 4868043,
+            "timezone": "America/Chicago",
+            "population": 290,
+            "postcodes": [
+                "52760"
+            ],
+            "country_id": 6252001,
+            "country": "United States",
+            "admin1": "Iowa",
+            "admin2": "Muscatine",
+            "admin3": "Moscow Township"
+        },
+        {
+            "id": 4518753,
+            "name": "Moscow",
+            "latitude": 38.85701,
+            "longitude": -84.2291,
+            "elevation": 152.0,
+            "feature_code": "PPL",
+            "country_code": "US",
+            "admin1_id": 5165418,
+            "admin2_id": 4508924,
+            "admin3_id": 4527700,
+            "timezone": "America/New_York",
+            "population": 186,
+            "postcodes": [
+                "45153"
+            ],
+            "country_id": 6252001,
+            "country": "United States",
+            "admin1": "Ohio",
+            "admin2": "Clermont",
+            "admin3": "Washington Township"
+        }
+    ],
+    "generationtime_ms": 0.31733513
+}
