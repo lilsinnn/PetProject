@@ -1,21 +1,51 @@
 from get_whether import get_whether
 
-def generate(data: dict):
+def generate(data: dict, mode: int):
     """
     Makes smth like beatiful answer
     """ 
-    important_info_dict = {}
+
     if data["current"]["is_day"] == 1:
         is_day = "День"
     else:
         is_day = "Ночь"
-    print(
-    f"Страна: {data['country']}\n"
-    f"|\tТемпература: {data['current']['temperature_2m']}{data['current_units']['temperature_2m']}\n"
-    f"|\tОщущается как: {data['current']['apparent_temperature']}{data['current_units']['apparent_temperature']}\n"
-    f"|\tСкорость ветра: {data['current']['wind_speed_10m']}{data['current_units']['wind_speed_10m']}\n"
-    f"|\t{is_day}\n"
-    f"----------------------------------"
-)
+
+    if mode == 1:
+        
+        print(
+        f"Страна: {data['country']}\n"
+        f"|\tТемпература: {data['current']['temperature_2m']}{data['current_units']['temperature_2m']}\n"
+        f"|\tОщущается как: {data['current']['apparent_temperature']}{data['current_units']['apparent_temperature']}\n"
+        f"|\tСкорость ветра: {data['current']['wind_speed_10m']}{data['current_units']['wind_speed_10m']}\n"
+        f"|\t{is_day}\n"
+        f"----------------------------------"
+    )
+    if mode == 2:
+        ##
+        # day = 24
+        # print(
+        # f"Страна: {data['country']}\n"
+        # f"Осадки и погода на ближайшие 24 часа:\n")
+        # for i in data["hourly"]:
+        #     day += 1
+        #     if day == 24:
+        #         break
+        #     date = i["time"][:5]
+        #     temperature = i["temperature_2m"]
+        #     precipitation = i["precipitation_probability"]
+        #     print(f"\t{date}| {temperature}{data['hourly_units']['temperature_2m']} {precipitation}{data['hourly_units']["precipitation_probability"]}")
+        hourly = data["hourly"]
+
+        print(
+                f"Страна: {data['country']}\n"
+                f"Осадки и погода на ближайшие 24 часа:\n")
+        
+        for i in range(0, 24):
+            
+            date = hourly["time"][i][11:]
+            temperature = hourly["temperature_2m"][i]
+            precipitation = hourly["precipitation_probability"][i]
+            print(f"\t{date} | {temperature}{data['hourly_units']['temperature_2m']} {precipitation}{data['hourly_units']["precipitation_probability"]}")
+
 
 

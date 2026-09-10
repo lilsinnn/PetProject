@@ -4,10 +4,22 @@ from get_whether import get_whether
 from get_geo import geo
 
 
+# def main():
+#     city = input("Enter city: ")
+#     generate(get_whether(geo(city)))
+#     input()
+
 def main():
-    city = input("Enter city ")
-    generate(get_whether(geo(city)))
-    input()
+    mode = int(input(f"1 - current\n2 - hourly"))
+    city = input("Enter city: ")
+    if mode == 1:
+        generate(get_whether(geo(city)), 1)
+        input()
+    elif mode == 2:
+        generate(get_whether(geo(city)), 2)
+        input()
+    else:
+        print("only 1 or 2")
 
 while True:
     try:
@@ -17,3 +29,6 @@ while True:
     except KeyboardInterrupt:
         print("\nBye")
         break
+    except ValueError:
+        print("choose one of modes")
+        continue
