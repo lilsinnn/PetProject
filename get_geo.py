@@ -11,9 +11,12 @@ def geo(city: str):
     "country": "RU"
     }
     """
-    geo_json = requests.get(url, params={"name": city})
-
-    city_data = geo_json.json()["results"][0]
+    try:
+        response = requests.get(url, params={"name": city})
+        response.raise_for_status()
+    except requests.RequestException as e:
+        print(f"API sent error: {e}")
+    city_data = response.json()["results"][0]
     city_dict = {}
     city_dict.update({
         "latitude": city_data["latitude"],
