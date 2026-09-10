@@ -1,4 +1,5 @@
 from get_whether import get_whether
+import time
 
 def generate(data: dict, mode: int):
     """
@@ -39,13 +40,20 @@ def generate(data: dict, mode: int):
         print(
                 f"Страна: {data['country']}\n"
                 f"Осадки и погода на ближайшие 24 часа:\n")
+
+        current_time = time.strftime("%H:%M")
+
+        start_time = current_time[0] + current_time[1] # 12
+        try:
+            for i in range(int(start_time), 24):
+                        date = hourly["time"][i][11:]
+                        temperature = hourly["temperature_2m"][i]
+                        precipitation = hourly["precipitation_probability"][i]
+                        print(f"\t{date} | {temperature}{data['hourly_units']['temperature_2m']} {precipitation}{data['hourly_units']["precipitation_probability"]}")
+        except:
+            print("Hourly mode isn't working now")
+
+    
+
         
-        for i in range(0, 24):
-            
-            date = hourly["time"][i][11:]
-            temperature = hourly["temperature_2m"][i]
-            precipitation = hourly["precipitation_probability"][i]
-            print(f"\t{date} | {temperature}{data['hourly_units']['temperature_2m']} {precipitation}{data['hourly_units']["precipitation_probability"]}")
-
-
 
