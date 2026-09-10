@@ -46,7 +46,7 @@ def generate(data: dict, mode: int):
         # start_time = current_time[0] + current_time[1] # 12 maybe here can be error with time lower than 11
         current_time = int(time.strftime("%H"))
         try:
-            for i in range(current_time, 24 + current_time):
+            for i in range(current_time, 25 + current_time):
                         date = hourly["time"][i][11:]
                         temperature = hourly["temperature_2m"][i]
                         precipitation = hourly["precipitation_probability"][i]
