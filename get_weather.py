@@ -15,6 +15,7 @@ def get_weather(geo: dict):
         whether_json.raise_for_status()
     except requests.RequestException as e:
         print(f"API sent error: {e}")
+        return None
 
     # print(whether_json.json())
     whether = whether_json.json()

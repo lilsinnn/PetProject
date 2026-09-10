@@ -10,7 +10,7 @@ from get_geo import geo
 #     input()
 
 def main():
-    mode = int(input(f"1 - current\n2 - hourly"))
+    mode = int(input(f"1 - current\n2 - hourly\n"))
     city = input("Enter city: ")
     # if mode == 1:
     #     generate(get_weather(geo(city)), 1)
@@ -18,7 +18,7 @@ def main():
     # elif mode == 2:
     #     generate(get_weather(geo(city)), 2)
     #     input()
-    if mode == 1 or 2:
+    if mode in (1, 2):
         generate(get_weather(geo(city)), mode)
     else:
         print("only 1 or 2")
@@ -34,3 +34,6 @@ while True:
     except ValueError:
         print("choose one of modes")
         continue
+    except TypeError:
+        print("Something went wrong")
+
