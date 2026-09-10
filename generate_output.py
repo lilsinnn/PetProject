@@ -43,7 +43,7 @@ def generate(data: dict, mode: int):
 
         current_time = time.strftime("%H:%M")
 
-        start_time = current_time[0] + current_time[1] # 12
+        start_time = current_time[0] + current_time[1] # 12 maybe here can be error with time lower than 11
         try:
             for i in range(int(start_time), 24):
                         date = hourly["time"][i][11:]
