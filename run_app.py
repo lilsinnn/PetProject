@@ -12,12 +12,14 @@ from get_geo import geo
 def main():
     mode = int(input(f"1 - current\n2 - hourly"))
     city = input("Enter city: ")
-    if mode == 1:
-        generate(get_weather(geo(city)), 1)
-        input()
-    elif mode == 2:
-        generate(get_weather(geo(city)), 2)
-        input()
+    # if mode == 1:
+    #     generate(get_weather(geo(city)), 1)
+    #     input()
+    # elif mode == 2:
+    #     generate(get_weather(geo(city)), 2)
+    #     input()
+    if mode == 1 or 2:
+        generate(get_weather(geo(city)), mode)
     else:
         print("only 1 or 2")
 
